@@ -28,15 +28,15 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="flex flex-col justify-evenly items-center my-20 md:flex-row">
+      <div className="flex flex-col justify-evenly items-center my-0 md:my-20 md:flex-row">
         <div
-          className="h-[400px] w-[400px] mx-5 flex  justify-center items-center rounded-xl shadow-2xl"
+          className="h-[300px] w-[310px] md:h-[400px] md:w-[400px] mx-5 flex justify-center items-center rounded-xl shadow-2xl"
           style={{ backgroundColor: bgColor }}
         >
           <span style={{fontSize: `${size}px`, transform:`rotate(${angle}deg)`}}>{emoji}</span>
         </div>
 
-        <div className="h-[400px] w-[600px] mx-5 border-b-gray-500 bg-white p-5 rounded-lg shadow-xl overflow-y-scroll">
+        <div className="my-5 h-[300px] w-[310px] md:h-[400px] md:w-[600px] mx-5 border-b-gray-500 bg-[#F9F8F6] p-5 rounded-lg shadow-xl overflow-y-scroll">
           <p className="text-2xl text-gray-500">Customize Your Emoji</p>
           <p className="text-lg text-gray-500 my-3">
             Create your perfect emoji with these controls
@@ -66,6 +66,14 @@ export default function Home() {
             <BackColor bgColor={"#FFD97D"} setBgColor={setBgColor} />
             <BackColor bgColor={"#F7A072"} setBgColor={setBgColor} />
             <BackColor bgColor={"#FFD97D"} setBgColor={setBgColor} />
+            <BackColor bgColor={"#A72703"} setBgColor={setBgColor} />
+            <BackColor bgColor={"#B8C4A9"} setBgColor={setBgColor} />
+            <BackColor bgColor={"#6FA4AF"} setBgColor={setBgColor} />
+            <BackColor bgColor={"#A376A2"} setBgColor={setBgColor} />
+            <BackColor bgColor={"#57564F"} setBgColor={setBgColor} />
+            <BackColor bgColor={"#C0C9EE"} setBgColor={setBgColor} />
+            <BackColor bgColor={"#F6F0F0"} setBgColor={setBgColor} />
+            <BackColor bgColor={"#FDB7EA"} setBgColor={setBgColor} />
           </div>
           <br></br>
           <hr className="text-gray-500"></hr>
@@ -83,7 +91,7 @@ export default function Home() {
           <RotateCcw size={30} color="gray" className="mr-3 cursor-pointer" onClick={() => {
             angle>0 ? setAngle(angle - 45) : null;
           }}/>
-          <span className="text-2xl text-gray-500">{angle}</span>
+          {/* <span className="text-2xl text-gray-500 m-5">{angle}</span> */}
           <RotateCw size={30} color="gray" className="ml-3 cursor-pointer" onClick={()=> {
             angle<360 ? setAngle(angle + 45): null;
           }} />
