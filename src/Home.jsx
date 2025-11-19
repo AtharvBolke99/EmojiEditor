@@ -1,6 +1,6 @@
 import { useState } from "react";
-import EmojiSection from "../components/EmojiSection";
-import BackColor from "../components/BackColor";
+import EmojiSection from "./components/EmojiSection";
+import BackColor from "./components/BackColor";
 import {RotateCcw, RotateCw } from "lucide-react";
 
 export default function Home() {
@@ -10,15 +10,6 @@ export default function Home() {
   const [angle, setAngle] = useState(0);
   return (
     <div className="min-h-screen w-full bg-[#F8F3D9] relative">
-      {/* <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `
-        radial-gradient(circle at 20% 80%, rgba(255, 220, 190, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 245, 238, 0.35) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(255, 210, 180, 0.15) 0%, transparent 50%)`,
-        }}
-      /> */}
       <div>
         <h1 className="text-center text-5xl pt-8 font-bold text-[#504B38] m-0">
           Emoji Editor
